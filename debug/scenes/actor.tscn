@@ -8,8 +8,10 @@ atlas = ExtResource("1_e4fu5")
 region = Rect2(0, 112, 16, 16)
 
 [node name="Actor" type="Node2D"]
-position = Vector2(8, 8)
 script = ExtResource("1_r48tr")
+speed = null
+grid_cell_size_x = null
+grid_cell_size_y = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("AtlasTexture_bjfot")
