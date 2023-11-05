@@ -6,6 +6,7 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vth1d"]
 texture = ExtResource("1_mqv4j")
 0:0/0 = 0
+0:0/0/custom_data_0 = true
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -23,6 +24,7 @@ texture = ExtResource("1_mqv4j")
 15:0/0 = 0
 16:0/0 = 0
 0:1/0 = 0
+0:1/0/custom_data_0 = true
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -143,6 +145,8 @@ texture = ExtResource("1_mqv4j")
 16:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_dpufj"]
+custom_data_layer_0/name = "walkable"
+custom_data_layer_0/type = 1
 sources/0 = SubResource("TileSetAtlasSource_vth1d")
 
 [node name="dMain" type="Node2D"]
