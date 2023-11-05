@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1i1pjh17gpll"]
+
+[ext_resource type="Texture2D" uid="uid://cbxmjs0cr6yha" path="res://debug/assets/tileset.png" id="1_g5xeu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cwivw"]
+texture = ExtResource("1_g5xeu")
+3:3/size_in_atlas = Vector2i(3, 3)
+3:3/0 = 0
+21:3/size_in_atlas = Vector2i(3, 3)
+21:3/0 = 0
+0:30/size_in_atlas = Vector2i(3, 3)
+0:30/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_or5pe"]
+tile_shape = 1
+tile_size = Vector2i(24, 12)
+sources/0 = SubResource("TileSetAtlasSource_cwivw")
+
+[node name="lvl1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(104, 120)
+tile_set = SubResource("TileSet_or5pe")
+cell_quadrant_size = 32
+format = 2
+layer_0/name = "Ground"
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(65537, 196608, 3, 196610, 196608, 3, 327683, 196608, 3, 458756, 196608, 3, 327685, 196608, 3, 196612, 196608, 3, 65539, 196608, 3, -65534, 196608, 3, 589831, 0, 30, 589833, 0, 30, 327689, 0, 30, 720904, 0, 30, 720902, 0, 30, 851975, 0, 30, 851973, 0, 30, 720900, 0, 30, 589827, 0, 30, 458754, 0, 30, 327681, 0, 30, 196608, 0, 30, 983046, 0, 30, 458762, 0, 30, 589829, 196608, 3, 458758, 196608, 3, 196614, 196608, 3, 327687, 196608, 3, 196616, 196608, 3, -65530, 196608, 3, -65532, 196608, 3, -196605, 196608, 3, -327676, 196608, 3, 65545, 196608, 3, -65528, 196608, 3, -196601, 196608, 3, -327674, 196608, 3, 196618, 196608, 3, 458760, 196608, 3, 65543, 196608, 3, 65541, 196608, 3, 327691, 196608, 3, 458764, 196608, 3, 589835, 196608, 3, 720906, 196608, 3, 851977, 196608, 3, 983048, 196608, 3, 1114119, 196608, 3, 1245190, 196608, 3, 1114117, 196608, 3, 983044, 196608, 3, 851971, 196608, 3, 720898, 196608, 3, 589825, 196608, 3, 458752, 196608, 3, 393215, 196608, 3, -196603, 0, 30, -458747, 196608, 3)
+layer_1/name = "Top"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = true
+layer_1/y_sort_origin = 8
+layer_1/z_index = 5
+layer_1/tile_data = PackedInt32Array(-65535, 196608, 3, -196606, 196608, 3, -327677, 196608, 3, -458748, 196608, 3, -589819, 196608, 3, -458746, 196608, 3, -327673, 196608, 3, 262143, 196608, 3, 65538, 196608, 3)
